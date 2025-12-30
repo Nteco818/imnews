@@ -1,14 +1,24 @@
 import fs from "fs";
 import path from "path";
 
-const POST_DIR = path.join(process.cwd(), "post");
-const OUTPUT = path.join(process.cwd(), "posts.json");
+const SITE_URL = "https://imnews.vercel.app";
 
+const ROOT = process.cwd();
+const POST_DIR = path.join(ROOT, "post");
+
+const POSTS_JSON = path.join(ROOT, "posts.json");
+const SITEMAP_XML = path.join(ROOT, "sitemap.xml");
+const ROBOTS_TXT = path.join(ROOT, "robots.txt");
+
+// 读取文章文件
 const files = fs.readdirSync(POST_DIR)
   .filter(f => f.endsWith(".html"))
   .sort()
   .reverse();
 
+const today = new Date().toISOString().slice(0, 10);
+
+// ---------- 生成 posts.json ----------
 const posts = files.map(file => {
   const html = fs.readFileSync(path.join(POST_DIR, file), "utf8");
 
@@ -17,11 +27,9 @@ const posts = files.map(file => {
     html.match(/<h1[^>]*>(.*?)<\/h1>/)?.[1] ||
     file;
 
-  // 1️⃣ 先取 meta description
   let excerpt =
     html.match(/<meta name="description" content="(.*?)"/)?.[1] || "";
 
-  // 2️⃣ 如果没有，就取正文第一个 <p>
   if (!excerpt) {
     const p = html.match(/<p[^>]*>(.*?)<\/p>/);
     if (p) {
@@ -36,11 +44,41 @@ const posts = files.map(file => {
   return {
     title,
     url: `/post/${file}`,
-    date: new Date().toISOString().slice(0, 10),
+    date: today,
     category: "工具观察",
     excerpt
   };
 });
 
-fs.writeFileSync(OUTPUT, JSON.stringify(posts, null, 2));
-console.log("posts.json generated with excerpts");
+fs.writeFileSync(POSTS_JSON, JSON.stringify(posts, null, 2));
+
+// ---------- 生成 sitemap.xml ----------
+const sitemapUrls = [
+  `${SITE_URL}/`,
+  ...files.map(f => `${SITE_URL}/post/${f}`)
+];
+
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapUrls.map(url => `
+  <url>
+    <loc>${url}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>${url === `${SITE_URL}/` ? "1.0" : "0.8"}</priority>
+  </url>
+`).join("")}
+</urlset>`;
+
+fs.writeFileSync(SITEMAP_XML, sitemap.trim());
+
+// ---------- 生成 robots.txt ----------
+const robots = `User-agent: *
+Allow: /
+
+Sitemap: ${SITE_URL}/sitemap.xml
+`;
+
+fs.writeFileSync(ROBOTS_TXT, robots.trim());
+
+console.log("✅ posts.json, sitemap.xml, robots.txt generated");
