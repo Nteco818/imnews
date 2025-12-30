@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>IM News · 工具与数字生产力观察</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="聚合聊天、翻译、电商、办公、浏览器等工具的行业趋势、使用实践与真实观察。">
+<style>
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial;background:#fff;color:#111}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 18px}
+h1{margin:0 0 8px;font-size:30px}
+h2{margin:28px 0 12px;font-size:22px}
+.sub{margin:0 0 24px;color:#666;font-size:15px}
+.section{margin-bottom:36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.card{padding:16px;border:1px solid #eee;border-radius:14px;background:#fff}
+.title{margin:0 0 6px;font-size:17px;line-height:1.35}
+.meta{font-size:13px;color:#777;margin-bottom:8px}
+.desc{margin:0;color:#444;line-height:1.6;font-size:14px}
+a{color:#111;text-decoration:none}
+a:hover{text-decoration:underline}
+.topbar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+input,select{padding:10px 12px;border:1px solid #ddd;border-radius:10px;font-size:14px}
+.tag{display:inline-block;padding:4px 10px;border-radius:999px;background:#f5f5f5;font-size:12px;color:#555}
+.footer{margin-top:60px;padding-top:18px;border-top:1px solid #eee;color:#777;font-size:13px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <!-- 顶部定位 -->
+  <header>
+    <h1>IM News</h1>
+    <p class="sub">
+      数字工具 · 行业趋势 · 使用实践 · 真实观察  
+      <br>聊天 / 翻译 / 电商 / 办公 / 浏览器 / AI
+    </p>
+  </header>
+
+  <!-- 搜索与筛选 -->
+  <div class="topbar">
+    <input id="q" placeholder="搜索文章…" />
+    <select id="cat">
+      <option value="">全部工具分类</option>
+    </select>
+  </div>
+
+  <!-- 最新文章 -->
+  <section class="section">
+    <h2>最新文章</h2>
+    <div class="grid" id="latest"></div>
+  </section>
+
+  <!-- 分类区块 -->
+  <section class="section" id="sections"></section>
+
+  <footer class="footer">
+    IM News · 独立工具观察站  
+  </footer>
+</div>
+
+<script>
+(async ()=>{
+  const res = await fetch('/imnews/posts.json', { cache: 'no-store' });
+  const posts = await res.json();
+
+  // 分类集合
+  const cats = [...new Set(posts.map(p=>p.category).filter(Boolean))];
+
+  // 填充筛选器
+  const catSel = document.getElementById('cat');
+  cats.sort().forEach(c=>{
+    const o=document.createElement('option');
+    o.value=c;o.textContent=c;catSel.appendChild(o);
+  });
+
+  // 最新文章（前 6）
+  const latestBox = document.getElementById('latest');
+  posts.slice(0,6).forEach(p=>{
+    latestBox.innerHTML += card(p);
+  });
+
+  // 分类分区
+  const sec = document.getElementById('sections');
+  cats.forEach(c=>{
+    const list = posts.filter(p=>p.category===c).slice(0,6);
+    if(!list.length) return;
+    sec.innerHTML += `
+      <h2>${c}</h2>
+      <div class="grid">
+        ${list.map(card).join('')}
+      </div>
+    `;
+  });
+
+  // 搜索
+  const q=document.getElementById('q');
+  function renderSearch(){
+    const kw=q.value.toLowerCase();
+    const c=catSel.value;
+    const arr=posts.filter(p=>{
+      const hit=!kw||p.title.toLowerCase().includes(kw)||(p.excerpt||'').toLowerCase().includes(kw);
+      const ok=!c||p.category===c;
+      return hit&&ok;
+    }).slice(0,12);
+    latestBox.innerHTML=arr.map(card).join('')||'<p>暂无匹配内容</p>';
+  }
+  q.oninput=renderSearch;
+  catSel.onchange=renderSearch;
+
+  function card(p){
+    return `
+      <article class="card">
+        <h3 class="title"><a href="${p.url}">${p.title}</a></h3>
+        <div class="meta">${p.date||''} · <span class="tag">${p.category||''}</span></div>
+        <p class="desc">${p.excerpt||''}</p>
+      </article>
+    `;
+  }
+})();
+</script>
+
+</body>
+</html>
