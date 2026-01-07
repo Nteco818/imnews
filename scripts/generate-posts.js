@@ -11,7 +11,8 @@ const SITEMAP_XML = path.join(ROOT, "sitemap.xml");
 const ROBOTS_TXT = path.join(ROOT, "robots.txt");
 
 // 读取文章文件
-const files = fs.readdirSync(POST_DIR)
+const files = fs
+  .readdirSync(POST_DIR)
   .filter(f => f.endsWith(".html"))
   .sort()
   .reverse();
@@ -22,11 +23,13 @@ const today = new Date().toISOString().slice(0, 10);
 const posts = files.map(file => {
   const html = fs.readFileSync(path.join(POST_DIR, file), "utf8");
 
+  // title
   const title =
     html.match(/<title>(.*?)<\/title>/)?.[1] ||
     html.match(/<h1[^>]*>(.*?)<\/h1>/)?.[1] ||
     file;
 
+  // excerpt
   let excerpt =
     html.match(/<meta name="description" content="(.*?)"/)?.[1] || "";
 
@@ -41,11 +44,25 @@ const posts = files.map(file => {
     }
   }
 
+  // ✅ 读取文章内发布时间（新规则）
+  const dateMatch = html.match(
+    /<meta name="publish-date" content="([^"]+)"/
+  );
+
+  const publishDate = dateMatch ? dateMatch[1] : today;
+
+  // category（预留，后续可扩展）
+  const categoryMatch = html.match(
+    /<meta name="category" content="([^"]+)"/
+  );
+
+  const category = categoryMatch ? categoryMatch[1] : "工具观察";
+
   return {
     title,
     url: `/post/${file}`,
-    date: today,
-    category: "工具观察",
+    date: publishDate,
+    category,
     excerpt
   };
 });
@@ -60,14 +77,16 @@ const sitemapUrls = [
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${sitemapUrls.map(url => `
+${sitemapUrls
+  .map(url => `
   <url>
     <loc>${url}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>daily</changefreq>
     <priority>${url === `${SITE_URL}/` ? "1.0" : "0.8"}</priority>
   </url>
-`).join("")}
+`)
+  .join("")}
 </urlset>`;
 
 fs.writeFileSync(SITEMAP_XML, sitemap.trim());
