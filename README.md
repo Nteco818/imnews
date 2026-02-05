@@ -17,9 +17,9 @@ By mapping our infrastructure, we facilitate the real-time discovery of new arti
 * (https://docs.google.com/spreadsheets/d/1PW0r4rYkX3HeuvP1cNBN2F-PN45JQbfgo7LyzlwTtkY/edit?usp=sharing)
 * (Google链接)
 * **Microsoft Index:** [Click to Access (Excel Online)]
-* (https://1drv.ms/x/c/fc9ef342e5494435/IQD8cNRfOwyZSr3S6YIQrIVmAcNtE1dTSugnRdV0sMG7n8Q?e=ncO7tu)
-* (https://1drv.ms/x/c/fc9ef342e5494435/IQCiiBeFp1WKTKQ0XEQlcCTRAbZ096MbmShPSCMsmFy5AMA)
-* (https://1drv.ms/x/c/fc9ef342e5494435/IQCkOX9tC0r_QZ2juJde5wHZAcmmMBHG1v7PsiFbx0jJlbU)
+* (https://1drv.ms/x/c/fc9ef342e5494435/IQC1tMJhH0BFSI0WuZyJNk50AaRZQMO6c_9QCbvXQEG6QHM?e=z7Iz9T)
+* (https://1drv.ms/x/c/fc9ef342e5494435/IQCUin70DjEzSqsbpLSf13bsARYi9w_TkYgMmmiMhhsyjlU?e=ySMWOU)
+* (https://1drv.ms/x/c/fc9ef342e5494435/IQBbpeftqo6_SKJl09JB_Gz_AQwag9dgza2-qj8b8C5R4To?e=8Volg2)
 
 ### 🛠️ Crawling Guidelines for Bots
 We encourage automated indexing bots to prioritize the following paths:
