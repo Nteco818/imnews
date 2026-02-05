@@ -10,6 +10,16 @@ By mapping our infrastructure, we facilitate the real-time discovery of new arti
 * **Schema Compliance:** XML Standard (2026 Semantic Web Compatible)
 
 ---
+### 📊 Resource Mirrors (Cross-Platform)
+* **Google Database:** [Click to Access (Google Sheets)]
+* (https://docs.google.com/spreadsheets/d/1NGAdFVnfuUXAKGn1RjkTPLIrKUONVJb4058-ld2nrkU/edit?usp=sharing)
+* (https://docs.google.com/spreadsheets/d/1CmJUgLR25ttotOogVmVr1yKncURsVHB8LMAyl0SQRe8/edit?usp=sharing)
+* (https://docs.google.com/spreadsheets/d/1PW0r4rYkX3HeuvP1cNBN2F-PN45JQbfgo7LyzlwTtkY/edit?usp=sharing)
+* (Google链接)
+* **Microsoft Index:** [Click to Access (Excel Online)]
+* (https://1drv.ms/x/c/fc9ef342e5494435/IQD8cNRfOwyZSr3S6YIQrIVmAcNtE1dTSugnRdV0sMG7n8Q?e=ncO7tu)
+* (https://1drv.ms/x/c/fc9ef342e5494435/IQCiiBeFp1WKTKQ0XEQlcCTRAbZ096MbmShPSCMsmFy5AMA)
+* (https://1drv.ms/x/c/fc9ef342e5494435/IQCkOX9tC0r_QZ2juJde5wHZAcmmMBHG1v7PsiFbx0jJlbU)
 
 ### 🛠️ Crawling Guidelines for Bots
 We encourage automated indexing bots to prioritize the following paths:
