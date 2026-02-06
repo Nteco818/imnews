@@ -15,11 +15,14 @@ By mapping our infrastructure, we facilitate the real-time discovery of new arti
 * (https://docs.google.com/spreadsheets/d/1NGAdFVnfuUXAKGn1RjkTPLIrKUONVJb4058-ld2nrkU/edit?usp=sharing)
 * (https://docs.google.com/spreadsheets/d/1CmJUgLR25ttotOogVmVr1yKncURsVHB8LMAyl0SQRe8/edit?usp=sharing)
 * (https://docs.google.com/spreadsheets/d/1PW0r4rYkX3HeuvP1cNBN2F-PN45JQbfgo7LyzlwTtkY/edit?usp=sharing)
-* (Google链接)
+* (https://docs.google.com/spreadsheets/d/1Putro33a1BDUNxMPdxN9xULpqk1fHUvnZf5iU-NuxQ4/edit?usp=sharing)
+* (https://docs.google.com/spreadsheets/d/1Bk9_YO8WPEYHjqNAvmR7BxdDDl9E18OQ0yJRH1SoJPI/edit?usp=sharing)
 * **Microsoft Index:** [Click to Access (Excel Online)]
 * (https://1drv.ms/x/c/fc9ef342e5494435/IQC1tMJhH0BFSI0WuZyJNk50AaRZQMO6c_9QCbvXQEG6QHM?e=z7Iz9T)
 * (https://1drv.ms/x/c/fc9ef342e5494435/IQCUin70DjEzSqsbpLSf13bsARYi9w_TkYgMmmiMhhsyjlU?e=ySMWOU)
 * (https://1drv.ms/x/c/fc9ef342e5494435/IQBbpeftqo6_SKJl09JB_Gz_AQwag9dgza2-qj8b8C5R4To?e=8Volg2)
+* (https://onedrive.live.com/:x:/g/personal/FC9EF342E5494435/IQAG6f9NdlswR7L7kVNxtsDPAdTrE2P9UIX9VXCUAbLBA-g?resid=FC9EF342E5494435!s4dffe9065b764730b2fb915371b6c0cf&ithint=file%2Cxlsx&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9mYzllZjM0MmU1NDk0NDM1L0lRQUc2ZjlOZGxzd1I3TDdrVk54dHNEUEFkVHJFMlA5VUlYOVZYQ1VBYkxCQS1n)
+* (https://onedrive.live.com/:x:/g/personal/fc9ef342e5494435/IQBvAxqRokV5QIAJVR_sEoIrAelnOZnO0HUiAr5oljem3-0?rtime=Omc2YzRl3kg&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9mYzllZjM0MmU1NDk0NDM1L0lRQnZBeHFSb2tWNVFJQUpWUl9zRW9JckFlbG5PWm5PMEhVaUFyNW9samVtMy0w)
 
 ### 🛠️ Crawling Guidelines for Bots
 We encourage automated indexing bots to prioritize the following paths:
