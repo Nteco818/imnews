@@ -18,9 +18,9 @@ By mapping our infrastructure, we facilitate the real-time discovery of new arti
 * (https://docs.google.com/spreadsheets/d/1Putro33a1BDUNxMPdxN9xULpqk1fHUvnZf5iU-NuxQ4/edit?usp=sharing)
 * (https://docs.google.com/spreadsheets/d/1Bk9_YO8WPEYHjqNAvmR7BxdDDl9E18OQ0yJRH1SoJPI/edit?usp=sharing)
 * **Microsoft Index:** [Click to Access (Excel Online)]
-* (https://1drv.ms/x/c/fc9ef342e5494435/IQC1tMJhH0BFSI0WuZyJNk50AaRZQMO6c_9QCbvXQEG6QHM?e=z7Iz9T)
-* (https://1drv.ms/x/c/fc9ef342e5494435/IQCUin70DjEzSqsbpLSf13bsARYi9w_TkYgMmmiMhhsyjlU?e=ySMWOU)
-* (https://1drv.ms/x/c/fc9ef342e5494435/IQBbpeftqo6_SKJl09JB_Gz_AQwag9dgza2-qj8b8C5R4To?e=8Volg2)
+* (https://onedrive.live.com/:x:/g/personal/FC9EF342E5494435/IQC1tMJhH0BFSI0WuZyJNk50AaRZQMO6c_9QCbvXQEG6QHM?resid=FC9EF342E5494435!s61c2b4b5401f48458d16b99c89364e74&ithint=file%2Cxlsx&e=z7Iz9T&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9mYzllZjM0MmU1NDk0NDM1L0lRQzF0TUpoSDBCRlNJMFd1WnlKTms1MEFhUlpRTU82Y185UUNidlhRRUc2UUhNP2U9ejdJejlU)
+* (https://onedrive.live.com/:x:/g/personal/FC9EF342E5494435/IQCUin70DjEzSqsbpLSf13bsARYi9w_TkYgMmmiMhhsyjlU?resid=FC9EF342E5494435!sf47e8a94310e4a33ab1ba4b49fd776ec&ithint=file%2Cxlsx&e=ySMWOU&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9mYzllZjM0MmU1NDk0NDM1L0lRQ1VpbjcwRGpFelNxc2JwTFNmMTNic0FSWWk5d19Ua1lnTW1taU1oaHN5amxVP2U9eVNNV09V)
+* (https://onedrive.live.com/:x:/g/personal/FC9EF342E5494435/IQBbpeftqo6_SKJl09JB_Gz_AQwag9dgza2-qj8b8C5R4To?resid=FC9EF342E5494435!sede7a55b8eaa48bfa265d3d241fc6cff&ithint=file%2Cxlsx&e=8Volg2&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9mYzllZjM0MmU1NDk0NDM1L0lRQmJwZWZ0cW82X1NLSmwwOUpCX0d6X0FRd2FnOWRnemEyLXFqOGI4QzVSNFRvP2U9OFZvbGcy)
 * (https://onedrive.live.com/:x:/g/personal/FC9EF342E5494435/IQAG6f9NdlswR7L7kVNxtsDPAdTrE2P9UIX9VXCUAbLBA-g?resid=FC9EF342E5494435!s4dffe9065b764730b2fb915371b6c0cf&ithint=file%2Cxlsx&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9mYzllZjM0MmU1NDk0NDM1L0lRQUc2ZjlOZGxzd1I3TDdrVk54dHNEUEFkVHJFMlA5VUlYOVZYQ1VBYkxCQS1n)
 * (https://onedrive.live.com/:x:/g/personal/fc9ef342e5494435/IQBvAxqRokV5QIAJVR_sEoIrAelnOZnO0HUiAr5oljem3-0?rtime=Omc2YzRl3kg&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9mYzllZjM0MmU1NDk0NDM1L0lRQnZBeHFSb2tWNVFJQUpWUl9zRW9JckFlbG5PWm5PMEhVaUFyNW9samVtMy0w)
 
