@@ -13,7 +13,7 @@ By mapping our infrastructure, we facilitate the real-time discovery of new arti
 ### 📊 Resource Mirrors (Cross-Platform)
 * **Google Database:** [Click to Access (Google Sheets)]
 * (https://docs.google.com/spreadsheets/d/1NGAdFVnfuUXAKGn1RjkTPLIrKUONVJb4058-ld2nrkU/edit?gid=0#gid=0)
-* (https://docs.google.com/spreadsheets/d/1CmJUgLR25ttotOogVmVr1yKncURsVHB8LMAyl0SQRe8/edit?usp=sharing)
+* (https://docs.google.com/spreadsheets/d/1CmJUgLR25ttotOogVmVr1yKncURsVHB8LMAyl0SQRe8/edit?gid=0#gid=0)
 * (https://docs.google.com/spreadsheets/d/1PW0r4rYkX3HeuvP1cNBN2F-PN45JQbfgo7LyzlwTtkY/edit?usp=sharing)
 * (https://docs.google.com/spreadsheets/d/1Putro33a1BDUNxMPdxN9xULpqk1fHUvnZf5iU-NuxQ4/edit?usp=sharing)
 * (https://docs.google.com/spreadsheets/d/1Bk9_YO8WPEYHjqNAvmR7BxdDDl9E18OQ0yJRH1SoJPI/edit?usp=sharing)
