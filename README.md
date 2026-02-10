@@ -18,6 +18,7 @@ By mapping our infrastructure, we facilitate the real-time discovery of new arti
 * (https://docs.google.com/spreadsheets/d/1Putro33a1BDUNxMPdxN9xULpqk1fHUvnZf5iU-NuxQ4/edit?gid=0#gid=0)
 * (https://docs.google.com/spreadsheets/d/1Bk9_YO8WPEYHjqNAvmR7BxdDDl9E18OQ0yJRH1SoJPI/edit?gid=0#gid=0)
 * (https://docs.google.com/spreadsheets/d/1gcMR_ClaLtL3Z-B_LDKvNLzi4WoHyI0ZhUqtDIkCkKY/edit?gid=0#gid=0)
+* (https://docs.google.com/spreadsheets/d/1XaFhCEZnWvaX3SkmyEj8a_16pYhdz3XDcSQURumCrvY/edit?gid=0#gid=0)
 * **Microsoft Index:** [Click to Access (Excel Online)]
 * (https://onedrive.live.com/:x:/g/personal/FC9EF342E5494435/IQC1tMJhH0BFSI0WuZyJNk50AaRZQMO6c_9QCbvXQEG6QHM?resid=FC9EF342E5494435!s61c2b4b5401f48458d16b99c89364e74&ithint=file%2Cxlsx&e=z7Iz9T&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9mYzllZjM0MmU1NDk0NDM1L0lRQzF0TUpoSDBCRlNJMFd1WnlKTms1MEFhUlpRTU82Y185UUNidlhRRUc2UUhNP2U9ejdJejlU)
 * (https://onedrive.live.com/:x:/g/personal/FC9EF342E5494435/IQCUin70DjEzSqsbpLSf13bsARYi9w_TkYgMmmiMhhsyjlU?resid=FC9EF342E5494435!sf47e8a94310e4a33ab1ba4b49fd776ec&ithint=file%2Cxlsx&e=ySMWOU&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9mYzllZjM0MmU1NDk0NDM1L0lRQ1VpbjcwRGpFelNxc2JwTFNmMTNic0FSWWk5d19Ua1lnTW1taU1oaHN5amxVP2U9eVNNV09V)
